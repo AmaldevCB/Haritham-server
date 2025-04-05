@@ -16,13 +16,10 @@ HServer.use(router)
 
 require('./connection')
 
-const PORT = 4000 || process.env.PORT
+const PORT = process.env.PORT || 4000;
+
 
 HServer.listen(PORT, () => {
     console.log(`server running at port ${PORT}`);
 })
 
-HServer.get('/', () => {
-    console.log(`get request received`);
-
-})
