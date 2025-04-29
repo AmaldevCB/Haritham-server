@@ -33,7 +33,7 @@ router.put('/approve-request',jwtMiddleware,adminController.approveRequestContro
 router.post('/new-request',jwtMiddleware,userController.newRequest)
 
 // status
-router.get('/status',jwtMiddleware,userController.status)
+router.post('/status',jwtMiddleware,userController.status)
 
 // complaint
 router.post('/complaint',jwtMiddleware,userController.complaint)
